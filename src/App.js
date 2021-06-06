@@ -1,10 +1,15 @@
 import React from "react";
 import "./style.css";
 
-export default function App() {
-  return (
-    <div>
-      <h1>Hello ashi</h1>
-    </div>
-  );
+export default class App extends React.Component {
+  state={
+    name:"ashi"
+  };
+  render(){
+   return (
+      <div>
+        <h1>Hello {this.state.name}</h1>
+      </div>
+    );
+  }
 }
